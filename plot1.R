@@ -4,7 +4,7 @@ file <- "C:/Users/jatin/Documents/exdata_data_household_power_consumption/househ
 
 data <-read.table(file, header = TRUE, sep = ";")
 
-Data <- data[data$Global_active_power %in% c("1/2/2007","2/2/2007"),]
+Data <- data[data$Date %in% c("1/2/2007","2/2/2007"),]
 
 New_G_A_P <- as.numeric(data$Global_active_power)
 
